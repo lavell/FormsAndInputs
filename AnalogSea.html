@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" content="Analog Sea form inputs">
-	<title></title>
+	<meta charset="utf-8" content="Analog Sea Input Form">
+	<title>Analog Sea</title>
 	<link rel="stylesheet" type="text/css" href="AnalogSea.css">
 </head>
 <body>
-	<form class="" action="" method="">
-		<h1>Analog Sea</h1>
-		<fieldset name="sign-up">
-			<h2>Sign Up</h2>
-			<label for="email" required>Email</label>
-			<input placeholder="foo@bar.com" type="text" name='email' id='email'></input>
-			<label for="password">Password</label>
-			<input placeholder="1234passw0rd" type="password" name='password' id='password'></input>
-			<button type='sign-up'>Sign Up</button>
-			<p>Forgot Password?</p>
-		</fieldset>
+
+	<!-- logo on top of page -->
+	<img class="logo.png" src="https://tf-curricula-prod.s3.amazonaws.com/curricula/5b3249003592fc371bac5c6254b50c9c/FEWD-001/v6/assets2/1.6.2_challenge_signup_form/logo.png" alt="AnalogSea">
+
+	<form class="signup-form" action="/signup" accept="UTF-8" method="post">
+		<legend>Sign Up</legend>
+
+		<!-- email structure -->
+		<label for='email'>Email</label>
+		<input type='text' placeholder='foo@bar.com' name='email' id='email' required="">
+
+		<!-- password structure -->
+		<label for="password">Password</label>
+		<input placeholder='1234passw0rd' label='false' type='password' name='user-name' id='password' required="">
+
+		<!-- sign up button syntax -->
+		<button type='submit'>Sign Up</button>
+
+		<!--  -->
+		<p><a href="/forgot-password/new">Forgot Password?</a></p>
 	</form>
+
+	<!--  -->
+	<div class="footer">
+	<p>Already Have An Account<a href="/login">Log in</a></p>
+	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
