@@ -8,29 +8,31 @@
 <body>
 
 	<!-- logo on top of page -->
-	<img class="logo.png" src="https://tf-curricula-prod.s3.amazonaws.com/curricula/5b3249003592fc371bac5c6254b50c9c/FEWD-001/v6/assets2/1.6.2_challenge_signup_form/logo.png" alt="AnalogSea">
+	<img class="logo" src="https://tf-curricula-prod.s3.amazonaws.com/curricula/5b3249003592fc371bac5c6254b50c9c/FEWD-001/v6/assets2/1.6.2_challenge_signup_form/logo.png" alt="AnalogSea">
 
+	<!-- apply to forms you want people to signup for, Important info to know as a developer -->
 	<form class="signup-form" action="/signup" accept="UTF-8" method="post">
+
 		<legend>Sign Up</legend>
 
 		<!-- email structure -->
-		<label for='email'>Email</label>
-		<input type='text' placeholder='foo@bar.com' name='email' id='email' required="">
+		<label for="user-email">Email</label>
+		<input type="email" placeholder="foo@bar.com" name="user-email" id="user_email" required="">
 
 		<!-- password structure -->
 		<label for="password">Password</label>
-		<input placeholder='1234passw0rd' label='false' type='password' name='user-name' id='password' required="">
+		<input placeholder="1234passw0rd" label="false" type="password" name="user-name" id="password" required="">
 
 		<!-- sign up button syntax -->
-		<button type='submit'>Sign Up</button>
+		<button type="submit">Sign Up</button>
 
-		<!--  -->
+		<!-- correct forgot password syntax -->
 		<p><a href="/forgot-password/new">Forgot Password?</a></p>
 	</form>
 
-	<!--  -->
+	<!-- div outside form places footer in correct place -->
 	<div class="footer">
-	<p>Already Have An Account<a href="/login">Log in</a></p>
+	<p>"Already Have An Account"<a href="/login"> Log in</a></p>
 	</div>
 </body>
 </html>
